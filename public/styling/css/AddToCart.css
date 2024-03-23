@@ -1,0 +1,26 @@
+.h1 {
+  font-family: "Chronicle Display A", "Chronicle Display B", serif;
+  font-size: 36px;
+  font-weight: 325;
+}
+.p {
+  font-family: "seriff";
+  font-size: 18px;
+  font-weight: 400;
+
+  /* color: #707070; */
+}
+
+.btnStyling {
+  background-color: white;
+  font-family: "Gotham";
+  padding: 14px;
+}
+.cart:hover {
+  color: white !important;
+}
+
+.btn:hover {
+  background-color: orange !important;
+  color: white;
+}

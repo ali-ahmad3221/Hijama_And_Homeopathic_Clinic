@@ -1,0 +1,426 @@
+.wobble-element {
+    animation: wobble 7s infinite;
+}
+
+@keyframes wobble {
+    0% {
+        transform: translateX(0%);
+    }
+
+    15% {
+        transform: translateX(-30%) rotate(-5deg);
+    }
+
+    30% {
+        transform: translateX(30%) rotate(3deg);
+    }
+
+    45% {
+        transform: translateX(-30%) rotate(-3deg);
+    }
+
+    60% {
+        transform: translateX(5%) rotate(2deg);
+    }
+
+    75% {
+        transform: translateX(-2%) rotate(-1deg);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.elastic-element {
+    animation: elastic 7s infinite;
+}
+
+@keyframes elastic {
+
+    0%,
+    100% {
+        transform: scale(1.2);
+    }
+
+    20%,
+    80% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: scale(1);
+    }
+}
+
+.navbar {
+    background-color: transparent;
+
+    position: fixed !important;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 9999999999;
+}
+
+/* Start subNavbar */
+.listStyle:hover {
+    border-bottom: 1px solid black;
+}
+
+.navigation {
+    top: 0;
+    /* left:0; */
+    color: white;
+    position: fixed;
+    opacity: 0.9;
+    background-color: black;
+    text-align: center !important;
+    margin-top: 67px;
+    width: 100%;
+    z-index: 99999;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    z-index: 99999;
+}
+
+.navigation li {
+    text-decoration: none;
+    margin: 20px;
+    z-index: 99999;
+}
+
+/* @media (max-width: 1440px) {
+    .childRow {
+      margin-top: 150px;
+      text-align: left;
+      font-family: "seriff";
+      font-size: 56px;
+      font-weight: 500px;
+    }
+  } */
+.childRow {
+    text-align: left;
+    font-family: "seriff";
+    /* font-size: 60px; */
+    font-weight: bold;
+}
+
+.homeRow {
+    color: white;
+    position: absolute;
+    top: 0;
+    margin-top: 250px;
+}
+
+.hover-card {
+    /* margin-top: 5px; */
+    min-height: 450px;
+    border-radius: 0.5rem;
+    text-align: start;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding: 20px;
+    background-color: #fcf5f2;
+
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+    z-index: 1;
+}
+
+.hoverable:hover .hover-card {
+    display: block;
+}
+
+.hover-card-open {
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .treeClass {
+        padding: 2px;
+    }
+
+    .smallScreenHeight {
+        margin-top: 50px !important;
+    }
+
+    .tree-container {
+        max-height: 300px;
+        /* Adjust the height as needed */
+        overflow-y: auto;
+    }
+
+    /* Custom CSS for tree structure */
+    .tree {
+
+        list-style-type: none;
+        padding-left: 20px;
+        display: none;
+        /* Initially hide the tree */
+        background-color: #333;
+        top: 0;
+        color: white;
+
+
+    }
+
+    .tree li {
+
+        position: relative;
+        display: block;
+        padding: 21px;
+        /* margin-left: 300px; */
+        text-align: left;
+        /* width: 150px; */
+        z-index: 99999;
+    }
+
+    .tree li:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -10px;
+        border-left: 1px solid orange;
+        height: 100%;
+    }
+
+    .tree li:last-child:before {
+        height: 50%;
+    }
+
+    .tree li:after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: -10px;
+        border-top: 1px solid orange;
+        width: 10px;
+    }
+
+    .tree li:last-child:after {
+        top: 50%;
+        height: 50%;
+    }
+
+    .collapse {
+        background-color: #333;
+    }
+
+    .hover-card {
+        display: none;
+        position: absolute;
+
+        /* margin-left: 30px;  */
+
+        background-color: black;
+    }
+
+    .homeRow {
+        color: white;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .navigation {
+        display: none;
+        top: 0;
+        color: white;
+        /* position: absolute; */
+
+        /* margin-top: 80px; */
+    }
+
+    .navigation ul {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        z-index: 99999;
+        /* width: 100%; */
+    }
+
+    .navigation.active ul {
+        display: block;
+        z-index: 99999;
+    }
+
+    .navigation li {
+        display: block;
+        padding: 10px;
+        /* margin-left: 300px; */
+        text-align: left;
+        /* width: 150px; */
+        z-index: 99999;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .ahsancheck {
+        display: block;
+    }
+
+    .navigation {
+        display: block;
+    }
+}
+
+/* end subNavabar */
+@media only screen and (max-width: 768px) {
+    .tabletView {
+        display: none;
+    }
+
+    .level0 {
+        color: white !important;
+        width: 34%;
+        height: 500px;
+        border: 1px solid white;
+        margin-right: 50px;
+        left: 0;
+    }
+
+    .level1 {
+        color: white !important;
+        height: 500px;
+        border: 1px solid white;
+        left: 33%;
+
+        width: 40%;
+    }
+
+    .level2 {
+        color: white !important;
+        border: 1px solid white;
+        height: 500px;
+        right: 0;
+        width: 33%;
+    }
+}
+
+.level2style,
+.level3style {
+    display: none;
+}
+
+.level1style:hover>*,
+.level2style:hover>*,
+.level3style:hover>* {
+    color: orange;
+}
+
+@media only screen and (max-width: 767px) {
+    .subNavDropDownHeadingFontFamily li {
+        color: white;
+        /* margin-left: 70px; */
+    }
+
+    .level0 {
+        color: white !important;
+        width: 34%;
+        height: 500px;
+        border: 1px solid white;
+        margin-right: 50px;
+        left: 0;
+    }
+
+    .level1 {
+        color: white !important;
+        height: 500px;
+        border: 1px solid white;
+        left: 33%;
+
+        width: 40%;
+    }
+
+    .level2 {
+        color: white !important;
+        border: 1px solid white;
+        height: 500px;
+        right: 0;
+        width: 33%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1138px) and (orientation: landscape) {
+    /* Your CSS styles for landscape mode on mobile here */
+
+    .navigation {
+        display: none;
+    }
+
+    .tree-container {
+        min-height: 100%;
+        /* Adjust the height as needed */
+        overflow-y: auto;
+    }
+
+    /* Custom CSS for tree structure */
+    ul.tree {
+        display: block;
+        position: fixed;
+
+    }
+
+    .tree {
+
+        list-style-type: none;
+        padding-left: 20px;
+        display: none;
+        /* Initially hide the tree */
+        background-color: #333;
+        top: 0;
+        color: white;
+
+
+    }
+
+    .tree li {
+
+        position: relative;
+        display: block;
+        padding: 21px;
+        /* margin-left: 300px; */
+        text-align: left;
+        /* width: 150px; */
+        z-index: 99999;
+    }
+
+    .tree li:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -10px;
+        border-left: 1px solid orange;
+        height: 100%;
+    }
+
+    .tree li:last-child:before {
+        height: 50%;
+    }
+
+    .tree li:after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: -10px;
+        border-top: 1px solid orange;
+        width: 10px;
+    }
+
+    .tree li:last-child:after {
+        top: 50%;
+        height: 50%;
+    }
+}

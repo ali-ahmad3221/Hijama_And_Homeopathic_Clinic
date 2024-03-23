@@ -1,0 +1,112 @@
+.imagesForHome img{
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .childRow {
+    /* top: 0; */
+
+    position: relative;
+    bottom: 150px;
+  }
+}
+
+/* Start of carsoul */
+@media (max-width: 992px) {
+  #galleria-collezioni > * {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: none;
+  }
+}
+
+@media (min-width: 993px) {
+  #galleria-collezioni {
+    overflow: hidden;
+    height: 80vh;
+  }
+
+  #galleria-collezioni > * {
+    transition: width 0.5s ease;
+    width: 25%;
+    height: 80vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+  }
+
+  #galleria-collezioni:hover > * {
+    width: 0%;
+  }
+
+  #galleria-collezioni .single-collezione-galleria:hover {
+    width: 100%;
+  }
+
+  #galleria-collezioni .valign_middle {
+    position: static;
+  }
+}
+
+#galleria-collezioni > * .btn-default {
+  opacity: 0;
+  border: 1px solid #fff;
+  margin: 0 auto !important;
+  padding: 5px 15px;
+  transition: none;
+  /* color: white; */
+}
+
+#galleria-collezioni .single-collezione-galleria:hover .btn-default {
+  opacity: 1;
+}
+
+#galleria-collezioni .single-collezione-galleria:hover .btn-default:hover {
+  color: black;
+  background-color: white;
+}
+
+#galleria-collezioni .h1 {
+  font-weight: 400;
+}
+
+
+.black_overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.btn-default {
+  background-color: transparent;
+  border: none;
+  text-shadow: none;
+  padding: 0px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 1s ease 0s;
+
+  margin-right: 15px;
+}
+/* End of carsoul */
+.h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.p {
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 40px;
+
+}
+ /* Add this CSS within your HTML document or in a linked stylesheet */
+ .btn.btn-default:hover {
+  color: black !important;
+}

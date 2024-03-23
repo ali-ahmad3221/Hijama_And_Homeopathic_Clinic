@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+  }
+.stylingMargin {
+    margin-top: 120px;
+  }
+  @media (max-width: 600px) {
+    .stylingMargin {
+      margin-top: 0px;
+      color: red;
+    }
+  }
+ 
+  .p {
+    font-family: "Gotham";
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 40px;
+  }
+.imageForAbout img {
+    max-width: 100%;
+    height: auto;
+  }
+  

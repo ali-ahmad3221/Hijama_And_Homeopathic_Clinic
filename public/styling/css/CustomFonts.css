@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Gotham;
+  src: url("/Fonts/open-sans.light.ttf");
+}
+@font-face {
+  font-family: seriff;
+  src: url("/Fonts/SourceSerifPro-Regular.ttf");
+}
+.topNavFontFamily {
+  font-family: "Gotham";
+  font-weight: 200;
+  font-size: 14px;
+}
+.subNavFontFamily {
+  font-family: "seriff";
+  font-size: 19px;
+  font-weight: 200;
+  line-height: 19px;
+}
+
+.subNavDropDownHeadingFontFamily {
+  font-family: "seriff";
+  font-size: 19px;
+  font-weight: 200;
+  line-height: 19px;
+}
+.subNavImagedetailFontFamily {
+  font-family: "Gotham";
+  font-size: 19px;
+
+  line-height: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.subNavImageSubDetailFontFamily {
+  font-size: 15px;
+  color: #959595;
+  font-family: "Gotham";
+
+  font-weight: 300;
+}
+.FooterFontFamily {
+}

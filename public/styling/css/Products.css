@@ -1,0 +1,201 @@
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.discountwrapper {
+    display: flex;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+}
+
+.discountColor {
+    color: #dbff08;
+}
+
+.handCursor {
+    cursor: pointer;
+}
+
+.show {
+    height: 192px !important;
+    overflow-y: scroll !important;
+}
+.h2 {
+    font-size: 24px;
+}
+body {
+    background-color: black;
+}
+
+/* Default styles for the more-detail-button */
+.more-detail-button {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    font-family: "Gotham";
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Styles for mobile screens (less than or equal to 768px width) */
+@media screen and (max-width: 768px) {
+    .more-detail-button {
+        display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    font-family: "Gotham";
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    }
+}
+
+/* Hover effect for non-mobile screens */
+.image-container:hover .more-detail-button {
+    opacity: 1; /* Show the button on hover for non-mobile screens */
+}
+
+
+.stylingMargn {
+    margin-top: 120px;
+}
+
+@media (max-width: 600px) {
+    .stylingMargn {
+        margin-top: 0px;
+        color: red;
+    }
+}
+
+.p {
+    font-family: "Gotham";
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 40px;
+}
+
+.detail-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    /* Match the width of the image */
+    height: 60px;
+}
+
+.hover-detail {
+    text-decoration: none;
+    color: white;
+}
+
+.hover-detail:hover {
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.filter-card-title {
+    margin: 0;
+}
+
+.filter-card-toggle-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.filter-option-title {
+    margin: 0;
+}
+
+.filter-option-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-option-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.filter-option-item:last-child {
+    border-bottom: none;
+}
+
+.filter-option-count {
+    color: #888;
+}
+
+/* Start  Sidebar CSS */
+.filterProcuctsList {
+    padding: 20px !important;
+
+    font-family: "Gotham";
+}
+
+.h4 {
+    font-family: "seriff";
+    font-size: 19px;
+    font-weight: 200;
+    line-height: 19px;
+}
+
+.sublist {
+    font-family: "Gotham";
+    text-transform: uppercase;
+    padding-left: 35px;
+
+    font-size: 13px;
+    color: white;
+}
+
+.filter-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.filter-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f4f4f4;
+}
+
+@media (max-width: 600px) {
+    .filter-card {
+        margin: 10px;
+    }
+}
